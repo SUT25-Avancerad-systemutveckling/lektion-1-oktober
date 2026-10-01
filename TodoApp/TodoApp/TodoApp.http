@@ -1,12 +1,12 @@
 @TodoApp_HostAddress = http://localhost:5053
 @TodoApp_DockerAddress = http://localhost:8080
 
-GET {{TodoApp_DockerAddress}}/api/todos
+GET {{TodoApp_HostAddress}}/api/todos
 Accept: application/json
 Content-Type: application/json
 
 ###
-POST {{TodoApp_DockerAddress}}/api/todos
+POST {{TodoApp_HostAddress}}/api/todos
 Content-Type: application/json
 
 {

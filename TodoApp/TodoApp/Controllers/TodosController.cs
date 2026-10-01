@@ -34,7 +34,7 @@ namespace TodoApp.Controllers
             var todo = new Todo
             {
                 Title = dto.Title,
-                IsComplete = false,
+                IsCompleted = false,
                 CreatedAt = System.DateTime.UtcNow
             };
 

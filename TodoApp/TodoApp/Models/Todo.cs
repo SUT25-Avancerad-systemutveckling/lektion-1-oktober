@@ -6,7 +6,7 @@ namespace TodoApp.Models
 
         public string Title { get; set; } = null!;
 
-        public bool IsComplete { get; set; }
+        public bool IsCompleted { get; set; }
 
         public DateTime CreatedAt { get; set; }
     }
