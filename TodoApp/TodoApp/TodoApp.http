@@ -1,0 +1,16 @@
+@TodoApp_HostAddress = http://localhost:5053
+@TodoApp_DockerAddress = http://localhost:8080
+
+GET {{TodoApp_DockerAddress}}/api/todos
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{TodoApp_DockerAddress}}/api/todos
+Content-Type: application/json
+
+{
+  "title": "Köpa kaffe"
+}
+
+###
